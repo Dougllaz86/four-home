@@ -1,1 +1,87 @@
-/* CODIGO AQUI */
+/* CODIGO HOME */
+body {
+  height: 300vh;
+}
+
+.titulo {
+  color: red;
+  font-size: 10px;
+}
+
+.desafios {
+  padding: 15px;
+  text-align: center;
+  border: 3px solid orange;
+  border-radius: 7px;
+  width: 300px;
+  font-weight: 700;
+}
+
+nav a img {
+  width: 150px;
+}
+
+nav a {
+  color: white !important;
+}
+
+.bg-foursys-1 {
+  background-color: #222239;
+}
+
+.bg-foursys-2 {
+  background-color: #ff5315;
+}
+
+/* CODIGO VIDEO */
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #222239;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
