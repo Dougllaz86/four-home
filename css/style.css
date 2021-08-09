@@ -8,13 +8,14 @@ body {
   font-size: 10px;
 }
 
-.desafios {
+.botao-laranja {
   padding: 15px;
   text-align: center;
   border: 3px solid orange;
-  border-radius: 7px;
+  border-radius: 50px;
   width: 300px;
   font-weight: 700;
+  color: white;
 }
 
 nav a img {
