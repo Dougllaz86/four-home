@@ -33,6 +33,10 @@ nav a {
   background-color: #ff5315;
 }
 
+#blog .card{
+  background-color: transparent !important;
+  color: white !important;
+}
 /* CODIGO VIDEO */
 header {
   position: relative;
@@ -73,6 +77,8 @@ header .overlay {
   opacity: 0.8;
   z-index: 1;
 }
+
+
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
